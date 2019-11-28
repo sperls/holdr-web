@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma"
 
 // Config vars
 // Holdr logo brand color: #2547AC
@@ -10,11 +11,16 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+.content-container
+    margin-top: 80px
+
 .navbar
   position: fixed
   top: 0
   width: 100%
-  height: 108px
+  position: fixed
+  top: 0
+  border-bottom: 1px solid rgba(5,23,74,0.90)
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -126,8 +132,6 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
-
-@import "~bulma"
 
 // responsiveness
 +tablet-only
